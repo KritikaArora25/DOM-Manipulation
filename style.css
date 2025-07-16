@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    background-color: rgb(54, 208, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card{
+    height: 420px;
+    width: 250px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 6px;
+    border: 3px solid black;
+    position: relative;
+}
+
+#stories{
+    height: 100px;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    border-bottom: 3px solid #dadada;
+    padding: 15px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#stories::-webkit-scrollbar{
+    display: none;
+}
+
+.story{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    /* background-color: yellow; */
+    border : 3px solid red;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;   
+}
+
+#full-screen{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: none;
+}
